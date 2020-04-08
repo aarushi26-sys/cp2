@@ -2,9 +2,9 @@
 ### ENGG1340/COMP2117 @ HKU C++ Text Based Game Project
 ------------
 ### Team Members ###
-[Aarushi Goyal](https://github.com/aarushi26-sys "Aarushi Goyal") (BEng)
+-[Aarushi Goyal](https://github.com/aarushi26-sys "Aarushi Goyal") (BEng)
 UID-3035709162
-[Mithil Aggarwal](http://github.com/dotus "Mithil Aggarwal")  (BEng) 
+-[Mithil Aggarwal](http://github.com/dotus "Mithil Aggarwal")  (BEng) 
 UID- 3035661724
 ------------
 ### Game Description ###
