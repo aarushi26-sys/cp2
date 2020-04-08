@@ -26,9 +26,9 @@ Spartans is a text based 2-player text-based combat and strategy game. Each play
 
 ### List of  features/functions
 - Generation of random game sets or events 
- > Random function for determining the damages caused by each melee weapon
+  > Random function for determining the damages caused by each melee weapon
 - Data structures for storing game status
- > Data structures like struct in the form of array to store the info about the characters 
+  > Data structures like struct in the form of array to store the info about the characters 
 - Dynamic memory management
   >This feature will be used to allocate the memory of the real time input of the players 
 - File input/output (e.g., for loading/saving game status)
