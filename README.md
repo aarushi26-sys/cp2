@@ -1,18 +1,18 @@
 # Spartans 
 ### ENGG1340/COMP2117 @ HKU C++ Text Based Game Project
 ------------
-### Team Members###
+### Team Members ###
 [Aarushi Goyal](https://github.com/aarushi26-sys "Aarushi Goyal") (BEng)
 [Mithil Aggarwal](http://github.com/dotus "Mithil Aggarwal")  (BEng) 
 
 ------------
 
-###Game Description###
+### Game Description ###
 Spartans is a text based 2-player text-based combat and strategy game. Each player chooses roles at the starting of the game and is given a particular gun, a melee weapon and a number of health shots. Each player role is balanced with different gun damages and melee damages. Players will use their weapons/health shots alternatively and the player who is able to eliminate the other player wins.
 
 ------------
 
-###Rules###
+### Rules ###
 
 - Each player will have **100** health points.
 - There are **5 roles** within the game each with a different primary gun and a melee weapon.
