@@ -1,5 +1,5 @@
 # Spartans 
-### ENGG1340/COMP2117 @ HKU C++ Text Based Game Project
+### ENGG1340/COMP2113 @ HKU C++ Text Based Game Project
 ------------
 ### Team Members ###
 - [Aarushi Goyal](https://github.com/aarushi26-sys "Aarushi Goyal") (BEng)
