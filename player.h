@@ -101,14 +101,14 @@ class player {
     }
 
     //Also changes health according to the damage done but outputs "damage taken" instead of "damage inflicted"
-    //Used mainly for self damage when using Meele Weapon
+    //Used mainly for self damage when using Melee Weapon
      void damageTaken(int damage, ofstream &fout){
       cout<<"Damage Taken "<<int((0.4)*damage)<<endl;
       fout<<"Damage Taken "<<int((0.4)*damage)<<endl;
       health -= (0.4)*damage;
     }
 
-    //Restores health 
+    //Restores health
     void healthRestored(int healthN, ofstream &fout){
       if (health+healthN >100){
         health = 100;

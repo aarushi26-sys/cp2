@@ -1,12 +1,12 @@
 #include <iostream>
 #include <stdlib.h>
-#include <ctime>
 #include <fstream>
 #include "players.h"
 #include "player.h"
 
 using namespace std;
 
+//Show the initial game rules screen
 void showGameRules()
 {
     cout<<"Welcome to the game of SPARTANS "<<endl;
@@ -14,14 +14,19 @@ void showGameRules()
     cout<<"Press enter to continue";
     cin.get();
     cout<<"Rules for the game: "<<endl;
-    cout<<"1. Each player starts with health of 100 points."<<endl;
-    cout<<"2. Each player also gets 3 Healthshots which increases the health points from 15-25(AI generated) ."<<endl;
-    cout<<"3. The goal of each player is to decrease the health points of the other player."<<endl;
-    cout<<"4. This can be done by either using the meelee or weapon."<<endl;
-    cout<<"5. Each weapon or meelee will decrease the health points of the other player but will also lower your health points."<<endl;
-    cout<<"May the odds be in your favour."<<endl;
-    cout<<"Press enter to start the game!";
+    cout<<"1. Each player will have 100 health points."<<endl;
+    cout<<"2. There are 5 character choices within the game each with a different primary gun and a melee weapon. "<<endl;
+    cout<<"3. All weapons (including the melee weapons) have different damages. "<<endl;
+    cout<<"4. Melee weapons also cost the player using them 40% of the damage the weapon inflicts."<<endl;
+    cout<<"5. Each player will also get a total of 3 health shots which restore health upto 25 points, i.e: within the range of 15-25. "<<endl;
+    cout<<"6. Only one weapon/health shot can be used in a move. "<<endl;
+    cout<<"7. The character selection screen lists the average melee and main weapon damage. The actual damage inflicted will be in the range of +- 5 of the listed value."<<endl;
+    cout<<"8. The first player to get the other player's health down to zero wins. "<<endl;
+    cout<<"9. All the Game Records will be stored in games.txt along with the timestamp of each game."<<endl;
+    cout<<endl<<"Press Enter to continue. ";
+
     cin.get();
+    cout<<endl<<endl;
 }
 
 //displays each character role and their attributes
@@ -34,7 +39,7 @@ void showPlayers(players players_list)
     {
         cout << "Character Number: " << i + 1 << endl;
         cout << "Character Name: " << players_list.name[i] << ", Weapon Name: " << players_list.weapon_name[i] << ", Weapon Damage: " << players_list.weapon_damage[i] << endl;
-        cout << "Meele Weapon: " << players_list.meele_name[i] << ", Meelee Damage: " << players_list.meele_damage[i] << endl;
+        cout << "Melee Weapon: " << players_list.meele_name[i] << ", Melee Damage: " << players_list.meele_damage[i] << endl;
         cout << endl;
     }
 }
@@ -45,8 +50,6 @@ void play(player *p1, player *p2);
 
 int main()
 {
-    //Recording time
-    
 
     //Display Game Rules
     showGameRules();
@@ -70,10 +73,12 @@ int main()
     cin >> choice1;
     choice1 -= 1;
 
+    //Dynamically allocating memory to p1 and p2 (each player's individual character)
     player *p1 = new player;
     player *p2 = new player;
     *p1 = player(p1name, players_list.meele_name[choice1], players_list.weapon_name[choice1], players_list.meele_damage[choice1], players_list.weapon_damage[choice1]);
 
+    //Try again in case the character has already been chosen by Player 1.
     do {
         if (choice1 + 1 == choice2)
             cout << "This character has already been chosen. Please try again.\n";
