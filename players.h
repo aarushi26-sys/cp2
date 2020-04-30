@@ -7,7 +7,7 @@ using namespace std;
 class players
 {
   public:
-  //to define the players
+  //to define the characters/player choices.
 
     int player_number[5];
     string name[5];
@@ -50,10 +50,10 @@ class players
 
         player_number[4]=5;
         name[4]="Ellas";
-        meele_name[4]="Galil_AR";
+        meele_name[4]="Blades";
         weapon_damage[4] = 22;
         meele_damage[4] = 18;
-        weapon_name[4]="Blades";
+        weapon_name[4]="Galil AR";
       }
 
 };
