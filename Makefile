@@ -1,7 +1,12 @@
 FLAGS = -pedantic-errors -std=c++11
 
-game: main.cpp players.h player.h
+play.o: play.cpp player.h
+	g++ $(FLAGS) -c $< 
+main.o: main.cpp player.h players.h
+	g++ $(FLAGS) -c $< 
+game: main.o play.o
 	g++ $(FLAGS) $^ -o $@
+	
 clean:
 	rm -f game
 tar:
