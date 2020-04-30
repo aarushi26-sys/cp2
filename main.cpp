@@ -86,11 +86,7 @@ int main()
 
     cout<<endl<<endl;
     play(p1, p2);
-<<<<<<< HEAD
-}
-=======
 
     delete p1;
     delete p2;
 }
->>>>>>> eb28d7df13b66d231c418e03ec07bf8b85d0e246
