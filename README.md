@@ -20,6 +20,7 @@ Spartans is a text based 2-player text-based combat and strategy game. Each play
 - Melee weapons can only be used a total number of** 3 times** and also cause cost some health of the player using it.
 -  Each player will also get a total of 3 health shots which restore health **upto 25 points.** 
 -  Only **one** weapon/health shot can be used in a move. 
+- Each weapon or meelee will decrease the health points of the other player but will also lower your health points.
 
 
 ------------
