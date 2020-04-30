@@ -1,4 +1,7 @@
+#ifndef PLAYER_H
+#define PLAYER_H
 #include<iostream>
+#include<fstream>
 #include<cstdlib>
 
 using namespace std;
@@ -62,13 +65,13 @@ class player {
 
     //Returns the calculated random Meele Damage
     int meeleDamageRandom(){
-      return ((rand()%meele_damage+5)+(meele_damage-5));
+      return ((rand()%11+(meele_damage-5)));
     }
 
     
     //Returns the calculated random Main Weapon Damage
     int weaponDamageRandom(){
-      return ((rand()%weapon_damage+5)+(weapon_damage-5));
+      return ((rand()%11+(weapon_damage-5)));
     }
 
     
@@ -80,7 +83,7 @@ class player {
     
     //Returns the calculated random Health Restore
     int healthRepair(){
-      return ((rand()%health_shot_repair+5)+(health_shot_repair-5));
+      return ((rand()%11+(health_shot_repair-5)));
     }
 
   
@@ -91,32 +94,33 @@ class player {
 
     
     //changes health according to the damage done
-    void damageDone(int damage){
+    void damageDone(int damage, ofstream &fout){
       cout<<"Damage Inflicted "<<damage<<endl;
+      fout<<"Damage Inflicted "<<damage<<endl;
       health -= damage;
     }
 
     //Also changes health according to the damage done but outputs "damage taken" instead of "damage inflicted"
     //Used mainly for self damage when using Meele Weapon
-     void damageTaken(int damage){
-      cout<<"Damage Taken "<<((0.4)*damage)<<endl;
+     void damageTaken(int damage, ofstream &fout){
+      cout<<"Damage Taken "<<int((0.4)*damage)<<endl;
+      fout<<"Damage Taken "<<int((0.4)*damage)<<endl;
       health -= (0.4)*damage;
     }
 
-<<<<<<< Updated upstream
-    //Restores health
-=======
     //Restores health 
->>>>>>> Stashed changes
-    void healthRestored(int healthN){
+    void healthRestored(int healthN, ofstream &fout){
       if (health+healthN >100){
         health = 100;
       } else {
         health += healthN;
       }
       cout<<"Health Restored to "<<health<<endl;
+      fout<<"Health Restored to "<<health<<endl;
       health_shots -= 1;
     }
 
     
 };
+
+#endif
