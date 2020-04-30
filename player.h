@@ -65,13 +65,13 @@ class player {
 
     //Returns the calculated random Meele Damage
     int meeleDamageRandom(){
-      return ((rand()%meele_damage+5)+(meele_damage-5));
+      return ((rand()%11+(meele_damage-5)));
     }
 
     
     //Returns the calculated random Main Weapon Damage
     int weaponDamageRandom(){
-      return ((rand()%weapon_damage+5)+(weapon_damage-5));
+      return ((rand()%11+(weapon_damage-5)));
     }
 
     
@@ -83,7 +83,7 @@ class player {
     
     //Returns the calculated random Health Restore
     int healthRepair(){
-      return ((rand()%health_shot_repair+5)+(health_shot_repair-5));
+      return ((rand()%11+(health_shot_repair-5)));
     }
 
   
