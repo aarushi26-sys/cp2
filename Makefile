@@ -8,7 +8,7 @@ game: main.o play.o
 	g++ $(FLAGS) $^ -o $@
 	
 clean:
-	rm -f game
+	rm -f game games.txt main.o play.o
 tar:
 	tar -czvf game.tgz *.cpp *.h
 
