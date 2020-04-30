@@ -31,7 +31,7 @@ Spartans is a text based 2-player text-based combat and strategy game. Each play
 - Data structures for storing game status
   > Data structures like struct and classes to store the info about the characters.
 - Dynamic memory management
-  > This feature will be used to allocate the memory of the real time input of the players. 
+> This feature will be used to allocate the memory of the real time input of the players and the information of the character chosen by the player.
 - File input/output (e.g., for loading/saving game status)
   > File I/O will be used to save/load the game status shall the players decide to exit the game mid-way.
 - Program codes in multiple files

@@ -14,13 +14,13 @@ void showGameRules()
     cout<<"Press enter to continue";
     cin.get();
     cout<<"Rules for the game: "<<endl;
-    cout<<"/t1. Each player starts with health of 100 points."<<endl;
-    cout<<"/t2. Each player also gets 3 Healthshots which increases the health points from 15-25(AI generated) ."<<endl;
-    cout<<"/t3. The goal of each player is to decrease the health points of the other player."<<endl;
-    cout<<"/t4. This can be done by either using the meelee or weapon."<<endl;
-    cout<<"/t5. Each weapon or meelee will decrease the health points of the other player but will also lower your health points."<<endl;
-    cout<<"/tMay the odds be in your favour."<<endl;
-    cout<<"/tPress enter to start the game!";
+    cout<<"/t/t1. Each player starts with health of 100 points."<<endl;
+    cout<<"/t/t2. Each player also gets 3 Healthshots which increases the health points from 15-25(AI generated) ."<<endl;
+    cout<<"/t/t3. The goal of each player is to decrease the health points of the other player."<<endl;
+    cout<<"/t/t4. This can be done by either using the meelee or weapon."<<endl;
+    cout<<"/t/t5. Each weapon or meelee will decrease the health points of the other player but will also lower your health points."<<endl;
+    cout<<"May the odds be in your favour."<<endl;
+    cout<<"Press enter to start the game!";
     cin.get();
 }
 
