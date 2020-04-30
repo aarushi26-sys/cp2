@@ -12,7 +12,7 @@ void showGameRules()
     cout<<"Welcome to the game of SPARTANS "<<endl;
     cout<<"Created by Mithil and Aarushi!"<<endl;
     cout<<"Press enter to continue";
-    cin.get()
+    cin.get();
     cout<<"Rules for the game: "<<endl;
     cout<<"/t1. Each player starts with health of 100 points."<<endl;
     cout<<"/t2. Each player also gets 3 Healthshots which increases the health points from 15-25(AI generated) ."<<endl;
@@ -21,7 +21,7 @@ void showGameRules()
     cout<<"/t5. Each weapon or meelee will decrease the health points of the other player but will also lower your health points."<<endl;
     cout<<"/tMay the odds be in your favour."<<endl;
     cout<<"/tPress enter to start the game!";
-    cin.get()
+    cin.get();
 }
 
 //displays each character role and their attributes
