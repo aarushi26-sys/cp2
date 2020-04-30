@@ -103,7 +103,11 @@ class player {
       health -= (0.4)*damage;
     }
 
+<<<<<<< Updated upstream
     //Restores health
+=======
+    //Restores health 
+>>>>>>> Stashed changes
     void healthRestored(int healthN){
       if (health+healthN >100){
         health = 100;

@@ -1,3 +1,6 @@
+#ifndef PLAYERS_H
+#define PLAYERS_H
+
 #include<iostream>
 
 using namespace std;
@@ -54,3 +57,5 @@ class players
       }
 
 };
+
+#endif
