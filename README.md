@@ -8,7 +8,7 @@ UID-3035709162
 UID- 3035661724
 ------------
 ### Game Description ###
-Spartans is a text based 2-player text-based combat and strategy game. Each player chooses roles at the starting of the game and is given a particular gun, a melee weapon and a number of health shots which are predifined with the factors. Each player role is balanced with different gun damages and melee damages. Players will use their weapons/health shots alternatively and the player who is able to eliminate the other player wins.
+Spartans is a text based 2-player text-based combat and strategy game. Each player chooses roles at the starting of the game and is given a particular gun, a melee weapon and a number of health shots which are predefined with the factors. Each player role is balanced with different gun damages and melee damages. Players will use their weapons/health shots alternatively and the player who is able to eliminate the other player wins.
 
 ------------
 
