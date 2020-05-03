@@ -47,5 +47,5 @@ Spartans is a text based 2-player text-based combat and strategy game. Each play
 - After the compilation is successful run `./game` in the terminal to execute the game.
 - To choose weapon, use the letters 'w' (main weapon) / 'h' (health shot) / 'm' melee weapon. To proceed through different menus, press the 'Enter' key as instructed in the game.
 
-- [Explanation Video Here](Link for the video https://drive.google.com/file/d/1xU6E19GuDN4hBc2hjzlCsKvK4v21ZDHd/view?usp=sharing "Explanation Video")
+- [Explanation Video Here](https://drive.google.com/file/d/1xU6E19GuDN4hBc2hjzlCsKvK4v21ZDHd/view?usp=sharing "Explanation Video Here")
 
