@@ -46,3 +46,6 @@ Spartans is a text based 2-player text-based combat and strategy game. Each play
 - A Makefile has already been made. To compile the entire code, simply type `make game`. To clean the files, i.e: remove the compiled files, simply type `make clean`.
 - After the compilation is successful run `./game` in the terminal to execute the game.
 - To choose weapon, use the letters 'w' (main weapon) / 'h' (health shot) / 'm' melee weapon. To proceed through different menus, press the 'Enter' key as instructed in the game.
+
+- [Explanation Video Here](Link for the video https://drive.google.com/file/d/1xU6E19GuDN4hBc2hjzlCsKvK4v21ZDHd/view?usp=sharing "Explanation Video")
+
